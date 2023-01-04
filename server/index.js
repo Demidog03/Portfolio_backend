@@ -17,9 +17,7 @@ const DB_PASSWORD = process.env.DB_PASSWORD
 const DB_NAME = process.env.DB_NAME
 
 //Middleware
-app.use(cors({
-    origin: ["http://localhost:3000", "https://demi-portfolio.onrender.com"]
-}))
+app.use(cors())
 app.use(fileUpload())
 app.use(express.json())
 app.use(express.static('uploads'))
